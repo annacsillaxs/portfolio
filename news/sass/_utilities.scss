@@ -1,0 +1,124 @@
+// BUTTONS
+.btn {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  background-color: $color-dark;
+  color: #fff;
+  font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+  padding: 0.8rem 1.5rem;
+  align-self: center;
+
+  &--primary {
+    background-color: $color-primary;
+  }
+
+  &--secondary {
+    background-color: $color-secondary;
+    margin-top: 1.5rem;
+  }
+
+  &--light {
+    background-color: $color-light;
+    color: $color-grey;
+  }
+
+  &--dark {
+    background-color: $color-grey;
+    color: $color-light;
+    text-align: center;
+  }
+
+  &--subscribe {
+    background-color: $color-primary;
+    align-self: stretch;
+    margin-top: 1rem;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+// HEADINGS
+.heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  // hero
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  // footer:
+  // font-size: clamp(1.6rem, 2.1vw, 2.2rem);
+
+  &--primary {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    color: $color-light;
+  }
+
+  &--primary-dark {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    color: $color-dark;
+  }
+
+  &--secondary,
+  &--secondary-dark {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+  }
+
+  &--secondary-dark {
+    color: $color-dark;
+  }
+}
+
+// TEXTS
+.text {
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+}
+
+.text-light {
+  color: $color-light;
+}
+
+// CATEGORIES
+.category {
+  display: inline-block;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.6rem 0.8rem 0.4rem;
+  border-radius: 15px;
+  line-height: 1;
+  align-content: center;
+
+  &--sport {
+    background-color: $color-sport;
+  }
+
+  &--ent {
+    background-color: $color-ent;
+  }
+
+  &--tech {
+    background-color: $color-tech;
+  }
+}
+
+// ARTICLE-CARDS
+.articles__card {
+  background-color: #fff;
+  color: $color-dark;
+
+  &--bg-dark {
+    background-color: $color-dark;
+    color: $color-light;
+  }
+
+  &--bg-red {
+    background-color: $color-primary;
+    color: $color-light;
+  }
+
+  &--bg-secondary {
+    background-color: $color-secondary;
+    color: $color-light;
+  }
+}

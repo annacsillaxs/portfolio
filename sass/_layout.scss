@@ -1,0 +1,10 @@
+.container {
+  display: grid;
+  grid-template-rows:
+    95vh 2rem minmax(max-content, 100vh)
+    3rem max-content;
+  grid-template-columns:
+    [rp-start] minmax(2rem, 1fr) [center-start] minmax(75vw, 110rem)
+    [center-end] minmax(2rem, 1fr) [lp-end];
+  grid-row-gap: 2rem;
+}

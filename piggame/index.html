@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="shortcut icon" type="image/png" href="/piggame/icon2.png" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+
+    <title>Pig Game</title>
+  </head>
+
+  <body>
+    <div class="rules">
+      <div class="rules__container">
+        <button class="btn-exit">&times;</button>
+        <h2 class="rules__heading">Game Rules</h2>
+        <p class="rules__text">The game has 2 players, playing in rounds</p>
+        <p class="rules__text">
+          The players can choose at the beginning of the game if they want to
+          play with 1 die or 2 dice (1 die is the default)
+        </p>
+        <p class="rules__text">
+          The players can set the winning score (the default is 100)
+        </p>
+        <p class="rules__text">
+          When the game has started, the winning score cannot be changed
+        </p>
+        <p class="rules__text">
+          In each turn, a player rolls a dice as many times as he whishes. Each
+          result get added to his CURRENT score
+        </p>
+        <p class="rules__text">
+          BUT, if the player rolls a 1 (any of the die), all his CURRENT score
+          gets lost. After that, it's the next player's turn
+        </p>
+        <p class="rules__text">
+          IF the player rolls 6 two times in a row with the same die, lose ALL
+          the GLOBAL score and the next player rolls
+        </p>
+        <p class="rules__text">
+          The player can choose to 'Hold', which means that his CURRENT score
+          gets added to his GLOBAL score. After that, it's the next player's
+          turn
+        </p>
+        <p class="rules__text">
+          The first player to reach 100 points on GLOBAL score wins the game
+        </p>
+      </div>
+    </div>
+
+    <div class="wrapper clearfix">
+      <div class="player-0-panel active">
+        <div class="player-name" id="name-0">Player 1</div>
+        <div class="player-score" id="score-0">43</div>
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-0">11</div>
+        </div>
+      </div>
+
+      <div class="player-1-panel">
+        <div class="player-name" id="name-1">Player 2</div>
+        <div class="player-score" id="score-1">72</div>
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-1">0</div>
+        </div>
+      </div>
+
+      <div class="game-1-set active">
+        <button class="btn-game-set btn-game-set--1" id="set-0">
+          <i class="ion-ios-loop dice-sm"></i>
+          Die
+        </button>
+      </div>
+
+      <div class="game-2-set">
+        <button class="btn-game-set btn-game-set--2" id="set-1">
+          <i class="ion-ios-loop dice-sm"></i
+          ><i class="ion-ios-loop dice-sm"></i>
+          Dice
+        </button>
+      </div>
+
+      <button class="btn-rules">Game Rules</button>
+
+      <button class="btn-new">
+        <i class="ion-ios-plus-outline"></i>New game
+      </button>
+
+      <div class="set-score">
+        <label for="winning-score">Winning Score:</label>
+        <input type="number" id="winning-score" />
+        <button class="btn-set" onclick="saveScore();">Set</button>
+      </div>
+
+      <div class="rolled-msg">
+        <h1 class="rolled-msg--1">You've lost your round scores :/</h1>
+      </div>
+
+      <div class="rolled-msg">
+        <h1 class="rolled-msg--6">You've lost all your scores :///</h1>
+      </div>
+
+      <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+      <button class="btn-hold">
+        <i class="ion-ios-download-outline"></i>Hold
+      </button>
+
+      <img src="dice-2.png" alt="Dice" class="dice" />
+
+      <!-- <img src="dice-5.png" alt="Dice" class="dice dice--1" />
+      <img src="dice-3.png" alt="Dice" class="dice dice--2" /> -->
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

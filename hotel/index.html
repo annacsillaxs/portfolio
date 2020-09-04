@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" type="image/x-ico" href="img/favicon-small.ico" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png" /> -->
+
+    <title>Quatro | Hotel | Car rental | Flight | Adventures</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="img/logo.png" alt="Quatro logo" class="logo" />
+
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="Search deals" />
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-user"></use>
+            </svg>
+            <span class="user-nav__notification">5</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-bubbles4"></use>
+            </svg>
+            <span class="user-nav__notification">3</span>
+          </div>
+          <div class="user-nav__user">
+            <img
+              src="img/user.jpg"
+              alt="user photo"
+              class="user-nav__user-photo"
+            />
+            <span class="user-nav__user-name">Anna</span>
+          </div>
+        </nav>
+      </header>
+
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item--active">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-office"></use>
+                </svg>
+                <span>Hotel</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-aircraft"></use>
+                </svg>
+                <span>Flight</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-key"></use>
+                </svg>
+                <span>Car rental</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-compass"></use>
+                </svg>
+                <span>Adventures</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="legal">
+            &copy; 2020 by Quattro. All rights reserved. Logo designed by
+            Freepik from Flaticon
+          </div>
+        </nav>
+
+        <main class="hotel-view">
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img
+                src="img/hotel1-2.jpg"
+                alt="photo of hotel1"
+                class="gallery__photo"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="img/hotel2-2.jpg"
+                alt="photo of hotel2"
+                class="gallery__photo"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="img/hotel3-2.jpg"
+                alt="photo of hotel3"
+                class="gallery__photo"
+              />
+            </figure>
+          </div>
+
+          <div class="overview">
+            <h1 class="overview__heading">Hotel Miramare</h1>
+            <div class="overview__stars">
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star-half"></use>
+              </svg>
+            </div>
+
+            <div class="overview__location">
+              <svg class="overview__icon-location">
+                <use xlink:href="img/sprite.svg#icon-location"></use>
+              </svg>
+              <button class="btn-inline">Rimini, Italy</button>
+            </div>
+
+            <div class="overview__rating">
+              <div class="overview__rating-average">8.8</div>
+              <div class="overview__rating-count">386 reviews</div>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="description">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
+                optio aliquam quisquam quasi alias at excepturi sit, quo
+                repudiandae in. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Amet, rerum suscipit. Voluptatem maxime qui
+                aliquam.
+              </p>
+              <p class="paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+                amet quod illum, optio quo non impedit error. Aut illo quam
+                beatae magnam illum, est recusandae consequuntur nulla at
+                cupiditate? Voluptate?
+              </p>
+              <ul class="list">
+                <li class="list__item">Close to the beach</li>
+                <li class="list__item">Private parking lot</li>
+                <li class="list__item">Free airport shuttle</li>
+                <li class="list__item">Airconditioning in all rooms</li>
+                <li class="list__item">Breakfast included</li>
+                <li class="list__item">Free wifi in all rooms</li>
+                <li class="list__item">Free bike rental</li>
+                <li class="list__item">Free safe in all rooms</li>
+              </ul>
+              <div class="recommend">
+                <p class="recommend__count">
+                  Amy and 3 other friends recommend this hotel
+                </p>
+                <div class="recommend__friend">
+                  <img
+                    src="img/user1.jpg"
+                    alt="friend1"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user2.jpg"
+                    alt="friend2"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user3.jpg"
+                    alt="friend3"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user4.jpg"
+                    alt="friend4"
+                    class="recommend__photo"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="user-reviews">
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aperiam aliquid at reprehenderit harum vel rem qui sit
+                  veritatis!
+                </blockquote>
+                <figcaption class="review__user">
+                  <img src="img/user5.jpg" alt="user5" class="review__photo" />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Jane Doe</p>
+                    <p class="review__user-date">May 21st, 2020</p>
+                  </div>
+                  <div class="review__rating">8.1</div>
+                </figcaption>
+              </figure>
+
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  inventore in odit ut corrupti corporis! Lorem ipsum dolor sit
+                  amet.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img src="img/user6.jpg" alt="user6" class="review__photo" />
+                  <div class="review__user-box">
+                    <p class="review__user-name">John Smith</p>
+                    <p class="review__user-date">June 15th, 2020</p>
+                  </div>
+                  <div class="review__rating">9.2</div>
+                </figcaption>
+              </figure>
+              <button class="btn-inline">Show all <span>&rarr;</span></button>
+            </div>
+          </div>
+
+          <div class="cta">
+            <h2 class="cta__book-now">
+              Only 2 rooms left for your selected dates!
+            </h2>
+            <button class="btn">
+              <span class="btn__visible">Book now</span>
+              <span class="btn__invisible">Only 2 rooms left</span>
+            </button>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
